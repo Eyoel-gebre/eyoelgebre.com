@@ -10,13 +10,44 @@
 }
 
 .display-4 {
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .lead {
     margin: 60px;
-    font-size: 1.5vw; 
-    margin-bottom: 50%
+    font-size: 1.25vw; 
+}
+
+.list-group {
+    margin-top: 80px;
+}
+
+.flex-column{
+    margin-left:8%;
+    margin-right:8%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 84%;
+}
+
+#input {
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 3%;
+}
+
+.outer-bar {
+    border: 2px solid #7947dd; 
+    width: 60%;
+    height: 30px;
+
+}
+
+.inner-bar{
+    background-color: #7947dd; 
+    width:50%; 
+    height: 26px;
 }
 
 @media only screen and (max-width: 700px) {

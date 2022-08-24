@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/ae1e69b411.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    </head>
+
+    <body>
+        <nav class="fixed-top navbar navbar-expand-lg navbar-dark" style="background-color: #7947dd; color: #ffffff;">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>            
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav" style="font-size: 17px;">
+                    <a class="nav-item nav-link" href="https://eyoel-gebre.github.io/">Home</a>
+                    <a class="nav-item nav-link" href="projects.html">Projects</a>
+                </div>
+
+                <div class="navbar-nav ml-auto" style="font-size: 17px;">
+                    <a class="nav-item nav-link" href="https://www.linkedin.com/in/eyoel-gebre/">
+                        <i class="fab fa-linkedin" style="color: #ffffff"></i>
+                    </a>
+                    <a class="nav-item nav-link" href="https://github.com/Eyoel-gebre">
+                        <i class="fa fa-github" style="color: #ffffff"></i>
+                    </a>
+                    <a class="nav-item nav-link" href="mailto:eyoel23@uw.edu">eyoel23@uw.edu</a>
+                </div>
+            </div>
+        </nav>
+
+        <h1 class="display-1 text-center" style="margin-top: 125px; font-weight: 300;">Keras movie review classifier</h1>
+        <p class="lead text-center" style="margin-top: 10px;">Type out an imaginary movie review and a nueral network will display how <br> positively or negatively it thinks you felt towards the movie.<br> (Punctuation is not allowed... will cause errors)</p>
+
+        <textarea class="form-control" id="input" rows="4" placeholder='Type out an imaginary movie review. Ex: "This movie was fantastic I loved all of the characters..."' ></textarea>
+        <div class="col text-center" style="margin-top: 30px;">
+            <button type="button" id='btn' class="btn btn-outline-secondary">Predict</button>
+        </div>
+
+        <h2 class="display-4 text-center" id='output2' style="font-weight: 340; margin-top: 30px;">Result: 50% confidence in positive sentiment</h2>
+
+        <div class="d-flex justify-content-center" style="margin-top: 30px; width: 100%; font-size: 2.5vw;">
+            <p style="display: inline; margin-right: 5vw;">Negative </p>
+            <div style="display: inline" class="outer-bar"><div id='output' class="inner-bar"></div></div>
+            <p style="display: inline ;margin-left: 5vw;"> Positive </p>
+        </div>
+
+        
+        <div class="card" style="margin-bottom: 60px; margin-top: 60px;width:80%; margin-left: 10%;">
+            <div class="card-body">
+                <h5 class="card-title">
+                    Example result:
+                </h2>
+                <p class="card-text">
+                    This film was just brilliant casting location scenery story direction everyone's really suited the part they played and you could just imagine being there robert is an amazing actor and now the same being director father came from the same scottish island as myself so i loved the fact there was a real connection 
+                    with this film the witty remarks throughout the film were great it was just brilliant so much that i bought the film as soon as it was released for and would recommend it to everyone to watch and the fly fishing was amazing really cried at the end it was so sad and you know what they say if you cry at a film it must
+                     have been good and this definitely was also to the two little boy's that played the ? of norman and paul they were just brilliant children are often left out of the list i think because the stars that play them all grown up are such a big profile for the whole film but these children are amazing and should be praised 
+                     for what they have done don't you think the whole story was so lovely because it was true and was someone's life after all that was shared with us all
+                </p>
+                <p class="card-text">
+                    Output: 99.4% condfidence in positive Sentiment
+                </p>
+            </div>
+        </div>
+
+        <script src="MLapp.js" type="module" ></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
