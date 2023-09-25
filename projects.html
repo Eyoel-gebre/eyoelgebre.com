@@ -10,12 +10,14 @@
 
     <body>
         <nav class="fixed-top navbar navbar-expand-lg navbar-dark" style="background-color: #7947dd; color: #ffffff;">
+
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>            
+            </button>   
+
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav" style="font-size: 17px;">
-                    <a class="nav-item nav-link" href="https://eyoel-gebre.github.io/">Home</a>
+                    <a class="nav-item nav-link" href="index.html">Home</a>
                     <a class="nav-item nav-link" href="projects.html">Projects</a>
                 </div>
 
@@ -26,21 +28,36 @@
                     <a class="nav-item nav-link" href="https://github.com/Eyoel-gebre">
                         <i class="fa fa-github" style="color: #ffffff"></i>
                     </a>
-                    <a class="nav-item nav-link" href="mailto:eyoel23@uw.edu">eyoel23@uw.edu</a>
+                    <a class="nav-item nav-link" href="mailto:eyoel23@uw.edu">eyoelge12@gmail.com</a>
                 </div>
             </div>
+
         </nav>
 
         <div class="list-group d-flex justify-content-center " style="margin-bottom:40px;">
+
+            <div href="#" class="list-group-item list-group-item-action flex-column">
+              <div class="d-flex w-80 justify-content-between">
+                <h5 class="mb-1">Refund feature for rentable phonelines</h5>
+                <small>March - June 2023</small>
+              </div>
+                <p class="mb-1">
+                  Was responsible for the design and implementation of a full-stack refund feature for rentable Phone lines.
+                  Developed the backend service in C#, involving numerous security features that avoided fraudulent use and utilized Entity Framework Core in order to build on an existing PostgresSQL database application.
+                  Created public API endpoints along with UI additions that allowed the service to be accessed multiple ways. UI features were created using the Blazor framework.
+                </p>
+              <a href="https://www.phoneblur.com/api/reference/#tag/Subscriptions/operation/UserInitiatedRefundOfReservationApi">API docs</a>
+            </div>
+
             <div href="#" class="list-group-item list-group-item-action flex-column">
               <div class="d-flex w-80 justify-content-between">
                 <h5 class="mb-1">Movie review binary classifier</h5>
                 <small>August 2022</small>
               </div>
                 <p class="mb-1">
-                •	Trained a Dense neural network to identify whether a movie review is positive or negative based on its text. <br>
-                •	Utilized the Keras deep learning API along with TensorFlow to train the model on a GPU using google Collaboratory<br>
-                •	The model was able to achieve ~87% accuracy on test data and was trained on data from the Keras IMDB data set.
+                  Trained a Dense neural network to identify whether a movie review is positive or negative based on its text. 
+                  Utilized the Keras deep learning API along with TensorFlow to train the model on a GPU using google Collaboratory.
+                  The model was able to achieve ~87% accuracy on test data and was trained on data from the Keras IMDB data set.
                 </p>
               <a href="Mlclassifier.html">Demo</a> |
               <a href="https://github.com/Eyoel-gebre/IMDB-movie-review-Binary-classifier.git">Github Link</a>  
@@ -67,7 +84,7 @@
                   Worked primarily on the back end where I built a Node.js server which constantly refreshed the data by collecting information from a CDC website using a python web scraper.
                 </p>
               <a href="https://devpost.com/software/covid-tracker-cgu08y">Hackathon listing</a>
-          </div>
+            </div>
 
           </div>
 
