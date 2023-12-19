@@ -4,18 +4,23 @@
 }
 
 .display-1 {
-    margin: 20px; 
+    margin-top: 20px;
+    margin-bottom: 10px; 
     font-size: 3.5vw; 
     color: #4b2e83;
 }
 
 .display-4 {
-    font-size: 1.5vw;
+    margin: 20px;
+    font-size: 30px;
 }
 
-.lead {
-    margin: 60px;
-    font-size: 1.25vw; 
+.social-icon {
+    margin-top: 10px;
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+    font-size: 1.5em; /* Adjust this value to make the icons larger or smaller */
+    color: #4b2e83; /* Replace this with the color that matches your website */
 }
 
 .list-group {
@@ -25,7 +30,7 @@
 .flex-column{
     margin-left:8%;
     margin-right:8%;
-    margin-top: 1%;
+    margin-top: 10px;
     margin-bottom: 1%;
     width: 84%;
 }
@@ -60,9 +65,9 @@
         margin: 10px;
     }
 
-    .display-4 {
+    /* .display-4 {
         font-size: 6vw;
-    }
+    } */
 
     .lead {
         margin: 30px;

@@ -9,30 +9,6 @@
     </head>
 
     <body>
-        <nav class="fixed-top navbar navbar-expand-lg navbar-dark" style="background-color: #7947dd; color: #ffffff;">
-
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>   
-
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav" style="font-size: 17px;">
-                    <a class="nav-item nav-link" href="index.html">Home</a>
-                    <a class="nav-item nav-link" href="projects.html">Projects</a>
-                </div>
-
-                <div class="navbar-nav ml-auto" style="font-size: 17px;">
-                    <a class="nav-item nav-link" href="https://www.linkedin.com/in/eyoel-gebre/">
-                        <i class="fab fa-linkedin" style="color: #ffffff"></i>
-                    </a>
-                    <a class="nav-item nav-link" href="https://github.com/Eyoel-gebre">
-                        <i class="fa fa-github" style="color: #ffffff"></i>
-                    </a>
-                    <a class="nav-item nav-link" href="mailto:eyoelge12@gmail.com">eyoelge12@gmail.com</a>
-                </div>
-            </div>
-
-        </nav>
 
         <div class="text-center">
             <img src="headshot.JPG" class="rounded-circle"  id="profpic">
@@ -41,17 +17,71 @@
         <h1 class="display-1 text-center">
             <b>Eyoel Gebre</b>
         </h1>
-    
+        
+        <div class="text-center">
+            <a href="https://github.com/Eyoel-gebre" target="_blank"><i class="fab fa-github social-icon"></i></a>
+            <a href="https://www.linkedin.com/in/eyoel-gebre/" target="_blank"><i class="fab fa-linkedin social-icon"></i></a>
+            <a href="mailto:eyoel@example.com"><i class="fas fa-envelope social-icon"></i></a>
+        </div>
+                    
         <h2 class="display-4 text-center">
-            Computer Science Student @ the University of Washington Seattle
+            Computer Science Student @ the University of Washington - Seattle
         </h2>
-    
-        <p class="lead text-center"> 
-            Hello! My name is Eyoel and I am a Computer Science undergraduate in the Paul G. Allen school at UW. I have roughly three years of software experience 
-            working on personal projects like websites and games along with professional industry experience through my internships. I am also currently a Teacher's Assistant.
-            I am very passionate about technology and am always excited to build things that are useful in the real world.
-        </p>
-    
+        
+        <div class="list-group d-flex justify-content-center " style="margin-bottom:40px;">
+
+            <div href="#" class="list-group-item list-group-item-action flex-column">
+              <div class="d-flex w-80 justify-content-between">
+                <h5 class="mb-1">Refund feature for rentable phonelines</h5>
+                <small>March - June 2023</small>
+              </div>
+                <p class="mb-1">
+                  Was responsible for the design and implementation of a full-stack refund feature for rentable Phone lines.
+                  Developed the backend service in C#, involving numerous security features that avoided fraudulent use and utilized Entity Framework Core in order to build on an existing PostgresSQL database application.
+                  Created public API endpoints along with UI additions that allowed the service to be accessed multiple ways. UI features were created using the Blazor framework.
+                </p>
+              <a href="https://www.phoneblur.com/api/reference/#tag/Subscriptions/operation/UserInitiatedRefundOfReservationApi">API docs</a>
+            </div>
+
+            <div href="#" class="list-group-item list-group-item-action flex-column">
+              <div class="d-flex w-80 justify-content-between">
+                <h5 class="mb-1">Movie review binary classifier</h5>
+                <small>August 2022</small>
+              </div>
+                <p class="mb-1">
+                  Trained a Dense neural network to identify whether a movie review is positive or negative based on its text. 
+                  Utilized the Keras deep learning API along with TensorFlow to train the model on a GPU using google Collaboratory.
+                  The model was able to achieve ~87% accuracy on test data and was trained on data from the Keras IMDB data set.
+                </p>
+              <a href="/Mlclassifier.html">Demo</a> |
+              <a href="https://github.com/Eyoel-gebre/IMDB-movie-review-Binary-classifier.git">Github Link</a>  
+            </div>
+
+            <div href="#" class="list-group-item list-group-item-action flex-column">
+                <div class="d-flex w-80 justify-content-between">
+                  <h5 class="mb-1">Unity game - Shifter</h5>
+                  <small>September 2020</small>
+                </div>
+                  <p class="mb-1">
+                  Developed an android game using the unity game engine and C# scripting. The game included in-App purchases and advertisement using the Unity IAP package and Unity ads SDK respectively. The game was released to the google play store.
+                  </p>
+                <a href="https://play.google.com/store/apps/details?id=com.EGStudios.Shifter&hl=en_US&gl=US">Google Play Store</a>
+            </div>
+
+            <div href="#" class="list-group-item list-group-item-action flex-column">
+              <div class="d-flex w-80 justify-content-between">
+                <h5 class="mb-1">DubHacks 2020</h5>
+                <small>December 2020</small>
+              </div>
+                <p class="mb-1">
+                  Competed in a two-day hackathon with a partner to create a website that served covid data. 
+                  Worked primarily on the back end where I built a Node.js server which constantly refreshed the data by collecting information from a CDC website using a python web scraper.
+                </p>
+              <a href="https://devpost.com/software/covid-tracker-cgu08y">Hackathon listing</a>
+            </div>
+
+          </div>
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
