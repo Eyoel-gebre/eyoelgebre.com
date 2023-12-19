@@ -1,2 +1,2 @@
-# Eyoel-gebre.github.io
+# eyoelgebre.com
 personal website
