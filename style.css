@@ -3,9 +3,14 @@
     max-width: 275px;
 }
 
-.display-1, .display-4{
+.display-1 {
     margin: 1%;
-    font-size: 2vw;
+    font-size: 3vw;
+}
+
+.display-4{
+    margin: 1%;
+    font-size: 2.5vw;
 }
 
 .social-icon {
@@ -53,9 +58,14 @@
         margin-top: 20%;
     }
 
-    .display-1, .display-4{
+    .display-1 {
         margin: 3%;
         font-size: 6vw;
+    }
+
+    .display-4{
+        margin: 3%;
+        font-size: 5vw;
     }
 
     .lead {
