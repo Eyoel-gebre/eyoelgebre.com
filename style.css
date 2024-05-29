@@ -3,14 +3,10 @@
     max-width: 275px;
 }
 
-.display-1 {
-    margin: 1%;
-    font-size: 3vw;
-}
-
 .display-4{
-    margin: 1%;
-    font-size: 2.5vw;
+    margin: 3%;
+    font-size: 3vw;
+    font-style: italic;
 }
 
 .social-icon {
@@ -18,7 +14,16 @@
     margin-right: 2.5px;
     margin-left: 2.5px;
     font-size: 1.5em; 
-    color: #4b2e83; 
+    color: #000000; 
+}
+
+#border {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#work-history {
+    margin-bottom: 5%;
 }
 
 .list-group {
@@ -53,24 +58,29 @@
     height: 26px;
 }
 
+.list-group-item {
+    border: .75px solid black;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    color: black;
+}
+
 @media only screen and (max-width: 700px) {
     .rounded-circle {
         margin-top: 20%;
     }
 
-    .display-1 {
-        margin: 3%;
-        font-size: 6vw;
-    }
-
     .display-4{
-        margin: 3%;
+        margin: 5%;
         font-size: 5vw;
     }
 
     .lead {
         margin: 30px;
-        font-size: 4vw;
+        font-size: 2.5vw;
     }
 
     .flex-column {
