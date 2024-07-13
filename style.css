@@ -1,11 +1,12 @@
 .rounded-circle {  
     margin-top: 7%;
-    max-width: 275px;
+    max-width: 400px;
 }
 
 .display-4{
-    margin: 2%;
-    font-size: 2vw;
+    margin-top: 2%;
+    margin-bottom: 0;
+    font-size: 35px;
     font-style: italic;
 }
 
@@ -18,12 +19,14 @@
 }
 
 #border {
-    margin-top: 4%;
-    margin-bottom: 4%;
+    margin-top: 3%;
+    margin-bottom: 5%;
 }
 
 #work-history {
     margin-bottom: 5%;
+    font-style: normal;
+    font-size: 40px;
 }
 
 .list-group {
@@ -71,6 +74,13 @@ a {
 @media only screen and (max-width: 700px) {
     .rounded-circle {
         margin-top: 20%;
+        max-width: 275px;
+    }
+
+    #work-history {
+        margin-bottom: 5%;
+        font-style: normal;
+        font-size: 5vw;
     }
 
     .display-4{
