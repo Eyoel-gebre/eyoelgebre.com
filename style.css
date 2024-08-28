@@ -1,13 +1,25 @@
-.rounded-circle {  
-    margin-top: 7%;
-    max-width: 400px;
+* {
+    font-family: 'Courier New', monospace;
 }
 
-.display-4{
-    margin-top: 2%;
-    margin-bottom: 0;
-    font-size: 35px;
-    font-style: italic;
+.prof-card {
+    position: fixed;
+    top: 25%;
+    left: 5px;
+    width: 30%;
+}
+
+.content-container {
+    position: fixed;
+    right: 5px;
+    bottom: 0;
+    width: 75%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.rounded-circle {  
+    max-width: 259px;
 }
 
 .social-icon {
@@ -18,27 +30,24 @@
     color: #000000; 
 }
 
-#border {
-    margin-top: 3%;
-    margin-bottom: 5%;
-}
-
-#work-history {
-    margin-bottom: 5%;
-    font-style: normal;
-    font-size: 40px;
-}
-
-.list-group {
-    margin-top: 10px;
-}
-
 .flex-column{
     margin-left:8%;
     margin-right:8%;
     margin-top: 1%;
     margin-bottom: 1%;
     width: 84%;
+    border-radius: 7px;
+    border: none;
+    transition: margin-left 0.3s ease;
+}
+
+.flex-column:hover {
+    margin-left: 6%; 
+}
+
+.content-header{
+    margin-top: 30px;
+    margin-left: calc(8% + 20px);
 }
 
 #input {
@@ -61,10 +70,6 @@
     height: 26px;
 }
 
-.list-group-item {
-    border: .75px solid black;
-}
-
 a {
     text-decoration: underline;
     text-decoration-style: dashed;
@@ -72,25 +77,22 @@ a {
 }
 
 @media only screen and (max-width: 700px) {
+    .prof-card {
+        position: static;
+        top: auto;
+        left: auto;
+        width: auto;
+    }
+    
+    .content-container {
+        position: static;
+        right: auto;
+        width: auto;
+    }
+
     .rounded-circle {
         margin-top: 20%;
         max-width: 275px;
-    }
-
-    #work-history {
-        margin-bottom: 5%;
-        font-style: normal;
-        font-size: 5vw;
-    }
-
-    .display-4{
-        margin: 5%;
-        font-size: 5vw;
-    }
-
-    .lead {
-        margin: 30px;
-        font-size: 2.5vw;
     }
 
     .flex-column {

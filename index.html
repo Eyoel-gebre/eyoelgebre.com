@@ -13,92 +13,104 @@
 
     <body>
 
-      <div class="text-center">
-          <img src="avatar.png" class="rounded-circle" id="profpic">
+      <div class="prof-card"> 
+        <div class="text-center">
+            <img src="avatar.png" class="rounded-circle" id="profpic">
+        </div>
+
+        <h2 class="text-center">
+          <span>Eyoel Gebre</span>
+        </h2>
+          
+        <div class="text-center">
+            <a href="https://x.com/eyoelgebre" target="_blank"><i class="fab fa-twitter social-icon"></i></a>
+            <a href="https://scholar.google.com/citations?hl=en&user=lq0BPP8AAAAJ" target="_blank"><i class="fa-brands fa-google-scholar social-icon"></i></a>
+            <a href="https://github.com/Eyoel-gebre" target="_blank"><i class="fab fa-github social-icon"></i></a>
+            <a href="https://www.linkedin.com/in/eyoel-gebre/" target="_blank"><i class="fab fa-linkedin social-icon"></i></a>
+            <a href="mailto:eyoel@example.com"><i class="fas fa-envelope social-icon"></i></a>
+        </div>
       </div>
-
-      <h2 class="display-4 text-center">
-        <span style="text-decoration: underline;">Eyoel</span> <br>Software Engineer
-      </h2>
-        
-      <div class="text-center">
-          <a href="https://x.com/eyoelgebre" target="_blank"><i class="fab fa-twitter social-icon"></i></a>
-          <a href="https://scholar.google.com/citations?hl=en&user=lq0BPP8AAAAJ" target="_blank"><i class="fa-brands fa-google-scholar social-icon"></i></a>
-          <a href="https://github.com/Eyoel-gebre" target="_blank"><i class="fab fa-github social-icon"></i></a>
-          <a href="https://www.linkedin.com/in/eyoel-gebre/" target="_blank"><i class="fab fa-linkedin social-icon"></i></a>
-          <a href="mailto:eyoel@example.com"><i class="fas fa-envelope social-icon"></i></a>
-      </div>
-        
-      <hr id="border" style="height:.5px;border:none;color:#333;background-color:#333;width: 65%;">
-
-      <h2 class="display-4 text-center" id="work-history">
-        Work history
-      </h2>
-
-      <div class="list-group d-flex justify-content-center " style="margin-bottom:40px;">
-
-        <div  href="#" class="list-group-item list-group-item-action flex-column">
-          <h5 class="card-title">Database @ Notion</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Summer 2024</h6>
-          <p class="card-text">
-            Working on improving the database block: <a href="https://www.notion.so/help/intro-to-databases">Link</a>
-          </p>
-          <a href="https://www.notion.so/help/intro-to-databases">Database docs</a>
-        </div>
-
-        <div  href="#" class="list-group-item list-group-item-action flex-column">
-          <h5 class="card-title">CPU AI performance testing @ Intel</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Spring 2024</h6>
-          <p class="card-text">
-            I performed accuracy and performance tests for ONNX Runtime on next generation CPUs in order to identify, record, and analyze flaws and regressions. This involved having to make test harnesses and low-level automation scripts that ran batches of the latest vision, text, audio, etc. models across many different systems. The tools and automations I created greatly sped up the testing processes for my team and were distributed to partner teams.
-          </p>
-        </div>
-
-        <div  href="#" class="list-group-item list-group-item-action flex-column">
-          <h5 class="card-title">Detail Page Layout Engine @ Amazon</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Summer 2023</h6>
-          <p class="card-text">
-            I fixed performance issues with a layout/rule engine used by the Amazon.com product detail page that existed for 3+ years. Specifically, an internal tool used to make changes to product detail page layouts experienced loading challenges which I fixed by moving heavy front-end procedures to backend cloud services while also restructuring processes to be asynchronous. This involved writing multithreaded JSON processing algorithms in Scala that handled large (over 60 MB of data) query responses to a tree-like database.
-          </p>
-        </div>
-
-        <div href="#" class="list-group-item list-group-item-action flex-column">
-            <h5 class="card-title">Refund features @ <a href="https://www.westbold.com/">WestBold</a></h5>
-            <h6 class="card-subtitle mb-2 text-muted">Spring 2023</h6>
+      <div class="content-container">
+        <div class="list-group d-flex justify-content-center " style="margin-bottom:40px;">
+          <h2 class="content-header">About Me</h2>
+          <div  href="#" class="list-group-item list-group-item-action flex-column">
             <p class="card-text">
-              I designed and implemented a refund feature for rentable phone lines. WestBold provides anonymous phone lines for online verification purposes but was in need of refund functionality. I developed the backend service in C#, involving numerous security features that avoided fraudulent use, utilized Entity Framework Core in order to build on an existing PostgresSQL database application, and created public API endpoints along with UI additions that allowed the service to be accessed multiple ways. UI features were created using the Blazor framework.
+              Hello, I'm a student at the <a href="https://www.uw.edu/">University of Washington</a> majoring in Computer Science and minoring in Physics. I have a strong interest in speech modeling with deep learning, web applications, and generally anything to do with computing.
             </p>
-          <a href="https://www.phoneblur.com/api/reference/#tag/Subscriptions/operation/UserInitiatedRefundOfReservationApi">API docs</a>
-        </div>
-
-        <div href="#" class="list-group-item list-group-item-action flex-column">
-            <h5 class="card-title">Movie review binary classifier</h5>
-            <h6 class="card-subtitle mb-2 text-muted">August 2022</h6>
+          </div>
+          <h2 class="content-header">Work History</h2>
+          <div  href="#" class="list-group-item list-group-item-action flex-column">
+            <h5 class="card-title">Database @ Notion</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Summer 2024</h6>
             <p class="card-text">
-              Trained a Dense neural network to identify whether a movie review is positive or negative based on its text. Utilized the Keras deep learning API along with TensorFlow to train the model on a GPU using google Collaboratory. The model was able to achieve ~87% accuracy on test data and was trained on data from the Keras IMDB data set.
+              I built the database commenting feature. Previously you could only comment on an entire Notion page, specific text selections, or entire Notion blocks so this was a widely requested improvement. Here's a <a href="https://x.com/NotionHQ/status/1818358657962459499">Demo</a>.
             </p>
-          <a href="/Mlclassifier.html">Demo</a> |
-          <a href="https://github.com/Eyoel-gebre/IMDB-movie-review-Binary-classifier.git">Github Link</a>  
-        </div>
+            <a href="https://www.notion.so/help/intro-to-databases">Database docs</a>,
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7224122994778894336/">LinkedIn post</a>
+          </div>
 
-        <div href="#" class="list-group-item list-group-item-action flex-column">
-              <h5 class="card-title">Shifter - Android mobile game</h5>
-              <h6 class="card-subtitle mb-2 text-muted">September 2020</h6>
+          <div  href="#" class="list-group-item list-group-item-action flex-column">
+            <h5 class="card-title">Intelligent Wearable Ring @ UW</h5>
+            <h6 class="card-subtitle mb-2 text-muted">2024</h6>
+            <p class="card-text">
+              I helped build parts of an inference system that ran <a href="https://ai.meta.com/blog/dino-v2-computer-vision-self-supervised-learning/">DINOV2</a> on an IOS device in order to give a wearabe ring the ability to control smart home devices. Learn more by reading the <a href="https://arxiv.org/abs/2407.18141">paper</a>.
+            </p>
+            <a href="https://arxiv.org/abs/2407.18141">Paper</a>
+          </div>
+
+          <div  href="#" class="list-group-item list-group-item-action flex-column">
+            <h5 class="card-title">CPU AI performance testing @ Intel</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Spring 2024</h6>
+            <p class="card-text">
+              I performed accuracy and performance tests for ONNX Runtime on next generation CPUs in order to identify, record, and analyze flaws and regressions. This involved having to make test harnesses and low-level automation scripts that ran batches of the latest vision, text, audio, etc. models across many different systems. The tools and automations I created greatly sped up the testing processes for my team and were distributed to partner teams.
+            </p>
+          </div>
+
+          <div  href="#" class="list-group-item list-group-item-action flex-column">
+            <h5 class="card-title">Detail Page Layout Engine @ Amazon</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Summer 2023</h6>
+            <p class="card-text">
+              I fixed performance issues with a layout/rule engine used by the Amazon.com product detail page that existed for 3+ years. Specifically, an internal tool used to make changes to product detail page layouts experienced loading challenges which I fixed by moving heavy front-end procedures to backend cloud services while also restructuring processes to be asynchronous. This involved writing multithreaded JSON processing algorithms in Scala that handled large (over 60 MB of data) query responses to a tree-like database.
+            </p>
+          </div>
+
+          <div href="#" class="list-group-item list-group-item-action flex-column">
+              <h5 class="card-title">Refund features @ <a href="https://www.westbold.com/">WestBold</a></h5>
+              <h6 class="card-subtitle mb-2 text-muted">Spring 2023</h6>
               <p class="card-text">
-              Developed an android game using the unity game engine and C# scripting. The game included in-App purchases and advertisement using the Unity IAP package and Unity ads SDK respectively. The game was released to the google play store.
+                I designed and implemented a refund feature for rentable phone lines. WestBold provides anonymous phone lines for online verification purposes but was in need of refund functionality. I developed the backend service in C#, involving numerous security features that avoided fraudulent use, utilized Entity Framework Core in order to build on an existing PostgresSQL database application, and created public API endpoints along with UI additions that allowed the service to be accessed multiple ways. UI features were created using the Blazor framework.
               </p>
-            <a href="https://play.google.com/store/apps/details?id=com.EGStudios.Shifter&hl=en_US&gl=US">Google Play Store</a>
-        </div>
+            <a href="https://www.phoneblur.com/api/reference/#tag/Subscriptions/operation/UserInitiatedRefundOfReservationApi">API docs</a>
+          </div>
 
-        <div href="#" class="list-group-item list-group-item-action flex-column">
-            <h5 class="card-title">DubHacks 2020</h5>
-            <h6 class="card-subtitle mb-2 text-muted">December 2020</h6>
-            <p class="card-text">
-              Competed in a two-day hackathon with a partner to create a website that served covid data. Worked primarily on the back end where I built a Node.js server which constantly refreshed the data by collecting information from a CDC website using a python web scraper.
-            </p>
-          <a href="https://devpost.com/software/covid-tracker-cgu08y">Hackathon listing</a>
-        </div>
+          <div href="#" class="list-group-item list-group-item-action flex-column">
+              <h5 class="card-title">Movie review binary classifier</h5>
+              <h6 class="card-subtitle mb-2 text-muted">August 2022</h6>
+              <p class="card-text">
+                Trained a Dense neural network to identify whether a movie review is positive or negative based on its text. Utilized the Keras deep learning API along with TensorFlow to train the model on a GPU using google Collaboratory. The model was able to achieve ~87% accuracy on test data and was trained on data from the Keras IMDB data set.
+              </p>
+            <a href="/Mlclassifier.html">Demo</a> |
+            <a href="https://github.com/Eyoel-gebre/IMDB-movie-review-Binary-classifier.git">Github Link</a>  
+          </div>
 
+          <div href="#" class="list-group-item list-group-item-action flex-column">
+                <h5 class="card-title">Shifter - Android mobile game</h5>
+                <h6 class="card-subtitle mb-2 text-muted">September 2020</h6>
+                <p class="card-text">
+                Developed an android game using the unity game engine and C# scripting. The game included in-App purchases and advertisement using the Unity IAP package and Unity ads SDK respectively. The game was released to the google play store.
+                </p>
+              <a href="https://play.google.com/store/apps/details?id=com.EGStudios.Shifter&hl=en_US&gl=US">Google Play Store</a>
+          </div>
+
+          <div href="#" class="list-group-item list-group-item-action flex-column">
+              <h5 class="card-title">DubHacks 2020</h5>
+              <h6 class="card-subtitle mb-2 text-muted">December 2020</h6>
+              <p class="card-text">
+                Competed in a two-day hackathon with a partner to create a website that served covid data. Worked primarily on the back end where I built a Node.js server which constantly refreshed the data by collecting information from a CDC website using a python web scraper.
+              </p>
+            <a href="https://devpost.com/software/covid-tracker-cgu08y">Hackathon listing</a>
+          </div>
+        <div>
       </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
