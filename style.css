@@ -1,10 +1,16 @@
 * {
     font-family: 'Courier New', monospace;
+    cursor: cell;
+}
+
+*::selection {
+    background: black;
+    color: white;
 }
 
 .prof-card {
     position: fixed;
-    top: 25%;
+    top: 10%;
     left: 5px;
     width: 30%;
 }
